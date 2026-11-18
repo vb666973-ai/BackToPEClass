@@ -1,0 +1,2 @@
+import { FAQ } from '@/constants/guide';
+export default function FAQ(){return <div className="page"><p className="eyebrow mb-2">A quick question before class?</p><h1 className="page-title">Good questions. Straight answers.</h1><div className="mt-8 max-w-3xl space-y-3">{FAQ.map(([q,a])=><details key={q} className="panel p-5"><summary className="flex min-h-11 cursor-pointer items-center font-display text-lg font-semibold">{q}</summary><p className="mt-3 text-muted-foreground">{a}</p></details>)}</div></div>;}
